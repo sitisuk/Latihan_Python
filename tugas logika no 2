@@ -1,0 +1,13 @@
+# NIM :19235071
+# Nama : Siti Sukaesih
+# Kelas : 19.1A.24
+
+aldi = int(input("masuk kelereng aldi :"))
+budi = aldi -15
+anto = 2 * (aldi + budi )
+agung = aldi + budi + anto - 5
+
+print("jumlah kelereng adi :",aldi)
+print("jumlah kelereng budi :",budi)
+print("jumlah kelereng anto :",anto)
+print("jumlah kelereng agung :",agung)

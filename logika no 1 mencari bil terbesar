@@ -1,0 +1,18 @@
+# Nama : Siti Sukaesih
+# Nim : 19235071
+# Kelas : 19.1A.24
+# Mencari bilangan terbesar
+
+b1 = 60
+b2 = 20
+b3 = 100
+b4  = 40
+
+if (b1 > b2) and (b1 > b3) and (b1 > b4) :
+    print(b1, "bilangan pertama adalah yang terbesar")
+elif (b2 > b3) and (b2 > b4) and (b2 > b1) :
+    print (b2, "bilangan kedua adalah yang terbesar")
+elif (b3 > b4) and (b3 > b2) and (b3 > b1) :
+    print (b3, "bilangan ketiga adalah yang terbesar")
+else :
+    print (b4, "bilangan keempat adalah yang terbesar")
