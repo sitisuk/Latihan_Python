@@ -1,3 +1,9 @@
+Nama    :Siti Sukaesih
+Nim     :19235071
+Kelas   :19.1A.24
+
+
+
 #input data karyawan
 karyawan=input("masukan nama karyawan :")
 jabatan=input("masukan golongan jabatan [1/2/3] :")
