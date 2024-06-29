@@ -16,11 +16,11 @@ def main():
 
         #Input minuman yang dibeli dan jumlahnya
         while True :
-            print("n/Pilih minuman yang di beli (ketik 'selesai' untuk mengakhiri) : ")
+            print("Pilih minuman yang di beli (ketik 'selesai' untuk mengakhiri) : ")
             for key in menu :
                 print(f"{key.capitalize()}: Rp {menu[key]}")
 
-            minuman_input = input("/nMasukan nama minuman atau ketik 'selesai : ").strip().lower()
+            minuman_input = input("Masukan nama minuman atau ketik 'selesai : ").strip().lower()
 
             if minuman_input == 'selesai' :
                 break
@@ -61,10 +61,10 @@ def main():
         total_akhir = total_setelah_diskon + ppn
 
         #Tampilkan struk pembayaran
-        print("/n           Struk Pembayaran            ")
+        print("           Struk Pembayaran            ")
         print("           Nostalgia Coffee Shop          ")
-        print("= * 40")
-        print(f"Nama Pembeli           :{nama_pembeli}")
+        print("=" * 40)
+        print(f"Nama Pembeli            :{nama_pembeli}")
         print("Minuman yang di pesan   :")
         for minuman, jumlah in pesanan:
             print(f"{minuman.capitalize()} x {jumlah}")
@@ -78,7 +78,7 @@ def main():
         #Input uang bayar dan hitung kembalian
         while True:
             try:
-                uang_bayar = float(input("/nUang Bayar            :Rp "))
+                uang_bayar = float(input("Uang Bayar              : Rp "))
                 if uang_bayar >= total_akhir:
                     break
                 else: 
@@ -90,7 +90,7 @@ def main():
         print(f"Uang kembali            : Rp {uang_kembali}")
 
         #Tanya apakah akan bertansaksi lagi
-        transaksi_lagi = input("/nApakah akan melakukan transaksi lagi? (ya/tidak): ").lower()
+        transaksi_lagi = input("Apakah akan melakukan transaksi lagi? (ya/tidak): ").lower()
         if transaksi_lagi != 'ya' :
             print("Terima kasih telah berbelanja di Nostalgia Coffe Shop!")
             break
