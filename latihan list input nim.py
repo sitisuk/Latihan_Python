@@ -1,4 +1,4 @@
-#variabel yang berulang menggunakan list/matriks
+
 list_nama=[]
 list_nim=[]
 list_uts=[]

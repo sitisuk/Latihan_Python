@@ -1,0 +1,43 @@
+# contoh argument deafault
+#definisi fungsi
+def print_info(nama, usia =17) :
+    """fungsi ini menampilkan info yang di masukan"""
+    print("Nama:", nama)
+    print("Usia" , usia)
+
+#memanggil fungsi print_info
+print_info(usia = 29, nama = "Galih")
+
+#pemanggilan fungsi untuk tidak menyediakan argumen usia
+print_info(nama = "Galih")
+
+#contoh argument panjang sembarang
+#definisi fungsi
+def print_info(argl, *vartuple):
+    """fungsi untuk menampilkan nilai argumen sembarang yang di lewatin"""
+    print("outputnya adalah :")
+    print (argl)
+    for var in vartuple :
+        print (var)
+
+    #pemanggil fungsi
+    #satu argumen
+    print_info(10)
+
+    #empat argument
+    print_info (10, 30, 50, 70)
+
+#contoh variabel global local
+#Variable global
+#Definisi fungsi
+def sum ( argl, arg2 ):
+    """menambahkan variabel dan mengembalikan hasilnya"""
+    total = argl = arg2 ;
+    #total di sini adalah variabel lokal
+    print("Di dalam fungsi nilai total : ", total )
+    return total
+
+#pemanggilan fungsi sum
+sum (10, 20)
+print (" Di luar fungsi, nilai total :", total )
+    
